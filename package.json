@@ -1,4 +1,4 @@
-{
+	{
   "name": "casecraft",
   "version": "1.2.0",
   "description": "A lightweight utility for converting strings between common naming conventions like camelCase, PascalCase, snake_case, kebab-case, and dot.case.",
