@@ -1,0 +1,35 @@
+{
+  "name": "casecraft",
+  "version": "1.0.0",
+  "description": "A small and powerful utility for converting strings between camelCase, PascalCase, snake_case, kebab-case, UPPER_SNAKE_CASE, and dot.case.",
+  "main": "caseConverter.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "case",
+    "casecraft",
+    "camelCase",
+    "PascalCase",
+    "snake_case",
+    "kebab-case",
+    "UPPER_SNAKE_CASE",
+    "dot.case",
+    "string",
+    "conversion",
+    "naming",
+    "formatter",
+    "utility"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/casecraft"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/casecraft/issues"
+  },
+  "homepage": "https://github.com/yourusername/casecraft#readme"
+}
+
