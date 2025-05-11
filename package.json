@@ -1,6 +1,6 @@
 {
   "name": "casecraft",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "A lightweight utility for converting strings between common naming conventions like camelCase, PascalCase, snake_case, kebab-case, and dot.case.",
   "main": "casecraft.js",
   "scripts": {
@@ -28,7 +28,6 @@
     "pascal-case",
     "train-case",
     "title-case",
-    "sentence-case",
     "dotcase",
     "pathcase",
     "slugcase",

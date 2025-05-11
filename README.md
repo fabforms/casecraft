@@ -217,23 +217,6 @@ this is a title case string → This Is A Title Case String
 
 ---
 
-### **Sentence Case** (`sentence case`)
-
-Converts a string to **Sentence case** (only the first word capitalized).
-
-**Example:**
-
-```
-this is a sentence case string → This is a sentence case string
-```
-
-**Best Used For:**
-
-* **Normal sentences or paragraphs**: Used for body text or strings that should appear like natural language.
-* **Use case**: For displaying paragraphs, descriptions, or any content where the text is meant to read like a typical sentence.
-
----
-
 ### **Path Case** (`path/case`)
 
 Converts a string to **path/case** (useful for paths and URLs).
