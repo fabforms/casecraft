@@ -116,7 +116,6 @@ module.exports = {
   toPascalCase,
   toTrainCase,
   toTitleCase,
-  toSentenceCase,
   toDotNotation,
   toPathCase,
   toSlugCase,

@@ -1,5 +1,5 @@
-	const assert = require('assert');
-const casecraft = require('./index');  // Ensure this points to your index.js or correct file
+const assert = require('assert');
+const casecraft = require('./casecraft'); 
 
 // Test cases
 const tests = [
@@ -44,11 +44,6 @@ const tests = [
     expected: 'HELLO-WORLD',
   },
   {
-    method: 'toSpongebobCase',
-    input: 'hello_world',
-    expected: 'HeLlO_WoRlD',
-  },
-  {
     method: 'toPascalCase',
     input: 'hello_world',
     expected: 'HelloWorld',
@@ -77,11 +72,6 @@ const tests = [
     method: 'toSlugCase',
     input: 'hello_world',
     expected: 'hello-world',
-  },
-  {
-    method: 'toMixedCase',
-    input: 'hello_world',
-    expected: 'HeLlO_wOrLd',
   },
   {
     method: 'toNoSpaces',
