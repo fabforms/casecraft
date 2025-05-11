@@ -1,6 +1,6 @@
 {
   "name": "casecraft",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "A lightweight utility for converting strings between common naming conventions like camelCase, PascalCase, snake_case, kebab-case, and dot.case.",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,24 @@
     "camelcase",
     "pascalcase",
     "snakecase",
+    "screaming-snake-case",
+    "lowercase",
+    "uppercase",
+    "camelcase-snake-case",
     "kebabcase",
+    "screaming-kebab-case",
+    "spongebob-case",
+    "pascal-case",
+    "train-case",
+    "title-case",
+    "sentence-case",
     "dotcase",
+    "pathcase",
+    "slugcase",
+    "mixedcase",
+    "nospaces",
+    "human-readable",
+    "reverse-case",
     "js-utils",
     "javascript-utilities"
   ],
@@ -29,8 +45,9 @@
     "url": "https://github.com/fabforms/casecraft/issues"
   },
   "homepage": "https://github.com/fabforms/casecraft#readme",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "casecraft": "^1.3.0"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
