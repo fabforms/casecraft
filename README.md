@@ -1,12 +1,13 @@
-````markdown
+
 # 🧰 casecraft
 
-**casecraft** is a lightweight utility that converts strings between common naming conventions like `camelCase`, 
-`PascalCase`, `snake_case`, `kebab-case`, and more. It helps developers maintain consistent naming across codebases
-, APIs, databases etc.
+**casecraft** is a lightweight utility that converts strings between common naming
+conventions like `camelCase`, `PascalCase`, `snake_case`, `kebab-case`, and more.
+It helps developers maintain consistent naming across codebases, APIs, databases,
+and user-facing content.
 
-> Good naming is fundamental to clean code. `casecraft` ensures your naming follows the right conventions for 
-the right contexts.
+> Good naming is fundamental to clean code. `casecraft` ensures your naming follows
+> the right conventions for the right contexts — automatically.
 
 ---
 
@@ -14,7 +15,7 @@ the right contexts.
 
 ```bash
 npm install casecraft
-````
+```
 
 ---
 
@@ -23,33 +24,95 @@ npm install casecraft
 Import and use `casecraft` to convert strings:
 
 ```js
-import { toCamelCase, toSnakeCase, toKebabCase } from 'casecraft';
+import {
+  toCamelCase,
+  toSnakeCase,
+  toKebabCase
+} from 'casecraft';
 
-toCamelCase('user_profile_data');     // userProfileData
-toSnakeCase('userProfileData');       // user_profile_data
-toKebabCase('GetUserInfo');           // get-user-info
+toCamelCase('user_profile_data');
+// → userProfileData
+
+toSnakeCase('userProfileData');
+// → user_profile_data
+
+toKebabCase('GetUserInfo');
+// → get-user-info
 ```
 
 ---
 
 ## 🔤 Supported Naming Conventions
 
-Convention             Example Input                 Output Example                Common Use Cases                              
+- **camelCase**  
+  From: `user_profile_data`  
+  To: `userProfileData`  
+  Usage: JS variables, functions, internals
 
-`camelCase`            `user_profile_data`           `userProfileData`             JS variables, functions, internal identifiers 
-`PascalCase`           `get-user-info`               `GetUserInfo`                 Class names, React components, constructors   
-`snake_case`           `userNameIsJohnDoe`           `user_name_is_john_doe`       Databases, file names, Python/Ruby            
-`kebab-case`           `getUserProfileData`          `get-user-profile-data`       URLs, CSS class names                         
-`dot.case`             `getUserDataFromDatabase`     `get.user.data.from.database` Nested keys, config paths                     
-`SCREAMING_SNAKE_CASE` `sessionTimeoutWarning`       `SESSION_TIMEOUT_WARNING`     Constants, environment variables              
-`lowercase`            `HELLO_WORLD`                 `hello_world`                 File systems, normalization                   
-`UPPERCASE`            `helloWorld123`               `HELLOWORLD123`               Constants, emphasis                           
-`Title Case`           `this is a title case string` `This Is A Title Case String` Headlines, readable labels                    
-`Train-Case`           `user-login-data`             `User-Login-Data`             Human-readable URLs, document titles          
-`path/case`            `user.profile.image`          `user/profile/image`          Paths, file structures                        
-`slug-case`            `A Great Day in the City!`    `a-great-day-in-the-city`     SEO-friendly URLs, slugs                      
-`noSpaces`             `No Spaces Allowed!`          `noSpacesAllowed`             Identifiers, filenames, compact representation
-`human-readable`       `this_is_a_cool_example`      `This is a cool example`      User-facing text, labels, headings            
+- **PascalCase**  
+  From: `get-user-info`  
+  To: `GetUserInfo`  
+  Usage: Class names, components, constructors
+
+- **snake_case**  
+  From: `userNameIsJohnDoe`  
+  To: `user_name_is_john_doe`  
+  Usage: Databases, file names, Python/Ruby
+
+- **kebab-case**  
+  From: `getUserProfileData`  
+  To: `get-user-profile-data`  
+  Usage: URLs, CSS class names
+
+- **dot.case**  
+  From: `getUserDataFromDatabase`  
+  To: `get.user.data.from.database`  
+  Usage: Config keys, settings
+
+- **SCREAMING_SNAKE_CASE**  
+  From: `sessionTimeoutWarning`  
+  To: `SESSION_TIMEOUT_WARNING`  
+  Usage: Constants, env variables
+
+- **lowercase**  
+  From: `HELLO_WORLD`  
+  To: `hello_world`  
+  Usage: File systems, normalization
+
+- **UPPERCASE**  
+  From: `helloWorld123`  
+  To: `HELLOWORLD123`  
+  Usage: Constants, emphasis
+
+- **Title Case**  
+  From: `this is a title case string`  
+  To: `This Is A Title Case String`  
+  Usage: Headings, labels
+
+- **Train-Case**  
+  From: `user-login-data`  
+  To: `User-Login-Data`  
+  Usage: URLs, titles
+
+- **path/case**  
+  From: `user.profile.image`  
+  To: `user/profile/image`  
+  Usage: File paths, folders
+
+- **slug-case**  
+  From: `A Great Day in the City!`  
+  To: `a-great-day-in-the-city`  
+  Usage: Slugs, SEO URLs
+
+- **noSpaces**  
+  From: `No Spaces Allowed!`  
+  To: `noSpacesAllowed`  
+  Usage: Compact identifiers
+
+- **human-readable**  
+  From: `this_is_a_cool_example`  
+  To: `This is a cool example`  
+  Usage: UI labels, plain text
 
 ---
 
@@ -57,54 +120,58 @@ Convention             Example Input                 Output Example             
 
 Consistent naming:
 
-* Enhances **code readability**
-* Reduces **developer friction** in team environments
-* Follows **language-specific best practices**
-* Improves **interoperability** across systems (APIs, databases, UIs)
-* Makes **debugging and maintenance** easier
+- Improves **readability**
+- Reduces **team friction**
+- Follows **language best practices**
+- Enhances **cross-system integration**
+- Simplifies **debugging and maintenance**
 
-`casecraft` abstracts naming logic so you can focus on what matters — clean, consistent, meaningful code.
+`casecraft` lets you focus on clean code, not tedious string formatting.
 
 ---
 
 ## 📚 Documentation
 
-Explore the full API and available utilities in the [GitHub repository](https://github.com/fabforms/casecraft).
+See the full API and tools in the [GitHub repo](https://github.com/fabforms/casecraft).
 
 ---
 
 ## 🔗 Links
 
-* **GitHub**: [https://github.com/fabforms/casecraft](https://github.com/fabforms/casecraft)
-* **NPM**: [https://www.npmjs.com/package/casecraft](https://www.npmjs.com/package/casecraft)
+- GitHub: [fabforms/casecraft](https://github.com/fabforms/casecraft)  
+- NPM: [casecraft on NPM](https://www.npmjs.com/package/casecraft)
 
 ---
 
 ## 💬 Community
 
-We welcome contributions, feedback, and bug reports. Please open an issue or submit a pull request on GitHub.
+We welcome issues, pull requests, and feedback.  
+Join us on GitHub!
 
 ---
 
 ## 🛠️ Contributing
 
-To contribute:
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
+1. Fork the repo  
+2. Create a new branch  
+3. Make your changes  
 4. Open a pull request
 
-Please follow standard commit practices and ensure your code is well-documented.
+Please follow conventional commits and include docs/tests where helpful.
 
 ---
 
 ## 💖 Sponsored by [FabForm.io](https://fabform.io)
 
-**FabForm.io** makes it easy to build, manage, and process forms for your applications. Whether you're working 
-on a marketing site, a JAMstack app, or a production dashboard — FabForm handles submissions, spam protection, 
-and automation with ease.
+**FabForm.io** helps you build, manage, and process forms with ease.
 
-👉 Check them out at [FabForm.io](https://fabform.io)
+- Built for JAMstack, static sites, and modern apps  
+- Handles submissions, spam filtering, and notifications  
+- Just connect your form and go — no backend needed
+
+👉 Try it at [FabForm.io](https://fabform.io)
+````
 
 ---
+
+
