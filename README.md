@@ -1,4 +1,3 @@
-
 # 🧰 casecraft
 
 **casecraft** is a lightweight utility that converts strings between common naming
@@ -171,7 +170,4 @@ Please follow conventional commits and include docs/tests where helpful.
 
 👉 Try it at [FabForm.io](https://fabform.io)
 ````
-
----
-
 
